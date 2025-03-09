@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border: 10px solid #800020; /* Added broad burgundy red border */
+            position: relative; /* Relative position to keep text inside */
+            overflow: hidden; /* Ensures text stays inside the border */
+        }
+        h1, h2 {
+            color: #800020;
+            text-align: center; /* Center the heading */
+        }
+        .section {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #800020;
+        }
+
+        .about-me {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #800020;
+        }
+     
+        .content {
+            line-height: 1.6;
+        }
+        .email {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+        .linkedin {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0077b5; /* LinkedIn blue color */
+            text-align: center;
+            margin-top: 10px;
+        }
+        .linkedin a {
+            color: #0077b5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .linkedin a:hover {
+            text-decoration: underline;
+        }
+        .moving-text {
+            color: #800020;
+            font-size: 20px;
+            font-weight: bold;
+            white-space: nowrap;
+            position: absolute;
+            top: 350px; /* Positioning below the title */
+            right: 100%; /* Start off to the right of the container */
+            transform: translateY(-50%); /* Adjust to center vertically */
+            animation: moveText 10s linear infinite;
+        }
+        @keyframes moveText {
+            0% { right: 100%; }
+            100% { right: -100%; } /* Move text from right to left */
+        }
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #800020;
+        }
+        .qualities {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .quality {
+            text-align: center;
+            flex: 1;
+        }
+        .quality img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .quality p {
+            font-size: 18px;
+            color: #800020;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Anugya Sharma's Portfolio</h1>
+        
+        <!-- Moving text -->
+        
+        <p class="email">Email: sharmaanugya05@gmail.com</p>
+        <img class="profile-image" src="https://media.licdn.com/dms/image/v2/D5622AQFtuzMnlyW-wQ/feedshare-shrink_800/feedshare-shrink_800/0/1701343305330?e=1744243200&v=beta&t=yRDLNKFCuJCusNy-rPEHnW5h2d9xMwhjeZrbvauz1kU" alt="Anugya Sharma Profile Image">
+        <div class="moving-text">Passionate Coder | Software Engineer | Problem Solver</div>
+
+        <!-- LinkedIn profile link -->
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/anugya-sharma-23836a152/" target="_blank">Visit LinkedIn Profile</a>
+        </div>
+
+        <!-- Qualities Section -->
+        <div class="qualities">
+            <div class="quality">
+                <img src="https://img.icons8.com/ios/50/000000/search.png" alt="Curious">
+                <p>Curious</p>
+            </div>
+            <div class="quality">
+                <img src="https://img.icons8.com/ios/50/000000/open-book.png" alt="Learner">
+                <p>Learner</p>
+            </div>
+            <div class="quality">
+                <img src="https://img.icons8.com/ios/50/000000/idea.png" alt="Creative">
+                <p>Creative</p>
+            </div>
+            <div class="quality">
+                <img src="https://img.icons8.com/ios/50/000000/laptop.png" alt="Technophilic">
+                <p>Technophile</p>
+            </div>
+            <div class="quality">
+                <img src="https://img.icons8.com/ios/50/000000/happy.png" alt="Enthusiastic">
+                <p>Enthusiastic</p>
+            </div>
+        </div>
+        
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>👩🏻‍🎓 I am a driven and motivated Master of Science student in Computer Science at Stevens Institute of Technology, set to graduate in April 2026. My educational foundation is solid, and I am constantly seeking to expand my knowledge through hands-on experience and collaboration.</p>
+            <p>👩🏻‍💻 With over 4 years of professional experience, I specialize in backend development, microservices, REST APIs, and cloud infrastructure. I have worked extensively with technologies such as Java, Spring Boot, Python, and AWS, alongside experience in machine learning, data science, and agile methodologies. At my previous roles at Airtel Payments Bank and MakeMyTrip, I successfully led projects to develop scalable systems and optimize application performance, boosting transaction traffic and customer engagement.</p>
+            <p>🎯 Beyond my technical skills, I also excel in project management. I have hands-on experience in the full project lifecycle, from planning to deployment, and have led teams through Agile sprints, improving efficiency and delivery timelines. I enjoy mentoring and sharing my knowledge with peers, and I am passionate about leading technical workshops to help others grow.</p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul class="content">
+                <li><strong>Web & Front-End:</strong> HTML5, CSS3, JavaScript (ES6+), React</li>
+                <li><strong>Programming:</strong> Java, C++, Python, Bash</li>
+                <li><strong>Back-End & Distributed Systems:</strong> Spring Boot, Quarkus, REST API, JUnit, Mockito, Nginx, Kong</li>
+                <li><strong>Database Engineering:</strong> MySQL, MongoDB, Aerospike, Oracle DB</li>
+                <li><strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes, Jenkins</li>
+                <li><strong>Visualization & Monitoring:</strong> Matplotlib, Seaborn, Power BI, Elasticsearch, Kibana, Grafana</li>
+                <li><strong>Collaboration & Version Control:</strong> Git, GitHub, Bitbucket, CI/CD</li>
+                <li><strong>Machine Learning:</strong> Linear Regression, Decision Trees, Neural Networks</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Work Experience</h2>
+            <div class="content">
+                <h3>Research Assistant - Stevens Institute of Technology</h3>
+                <p>Working on curriculum analysis using Lightcast, SQL, Python, and Power BI to align educational content with market needs.</p>
+                
+                <h3>Senior Software Engineer - MakeMyTrip</h3>
+                <p>Developed scalable microservices, optimized search engine pages, and built a Chrome extension using Java, Spring Boot, and JavaScript.</p>
+                
+                <h3>Software Engineer 2 - Airtel Payments Bank</h3>
+                <p>Designed and implemented a reward system, integrated microservices with Kafka, and optimized payment processing using Nginx and Kong.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
